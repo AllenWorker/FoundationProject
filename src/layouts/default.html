@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
 <body>
+<div class="grid-container">
+  {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+  {{> header}}
+  {{> body}}
+  {{> footer}}
+</div>
 
-{{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-{{> header}}
-{{> navigation}}
-{{> body}}
 
 <script src="{{root}}assets/js/app.js"></script>
 </body>
